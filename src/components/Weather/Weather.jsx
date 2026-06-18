@@ -17,13 +17,17 @@ function Weather() {
       alert("Please enter a city name");
       return;
     }
+  
     try {
       setLoading(true);
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.VITE_API_KEY}&units=metric`,
       );
       setWeather(response.data);
+      console.log(response.data);
+      
     } catch (error) {
+      setError("City not found")
       console.log(error);
     } finally {
       setLoading(false);
@@ -33,6 +37,7 @@ function Weather() {
   const handleClick = () => {
     fetchWeather();
   };
+
 
   return (
     <>

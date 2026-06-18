@@ -1,4 +1,4 @@
-.main-box{
+.main-box {
     display: flex;
     min-height: 25vh;
     width: 100%;
@@ -8,31 +8,31 @@
     margin-bottom: 0px;
 }
 
-.input-box{
+.input-box {
     padding-top: 50px;
 }
 
-.input-box input{
+.input-box input {
     height: 50px;
     width: 400px;
     font-size: 30px;
-    padding:  30px ;
+    padding: 30px;
     border-radius: 20px;
     outline: none;
 }
 
-.search-box{
+.search-box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.btn-box{
+.btn-box {
     padding-top: 50px;
 }
 
-.btn-box button{
+.btn-box button {
     height: 50px;
     width: fit-content;
     padding: 10px 20px;
@@ -46,7 +46,7 @@
     font-weight: 700;
 }
 
-.cards-container{
+.cards-container {
     min-height: 75vh;
     width: 100%;
     display: flex;
@@ -55,15 +55,18 @@
 }
 
 .loader {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     border: 4px solid #ddd;
     border-top: 4px solid #007bff;
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
+
+
